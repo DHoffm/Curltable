@@ -175,14 +175,13 @@ namespace Curl
         private SetupComponent setupComp;
         private ShutdownComponent shutdownComp;
         private List<Container> componentList = new List<Container>();
-
-        #endregion
-
-        private int lastFrame = 0;
+        
         private Slide jmpToZeroSlider;
         ////true is tempo, false = pitch
         private bool isTempoOrPitch = true;
         
+        #endregion
+
         #endregion
 
         #region constructor
@@ -427,7 +426,7 @@ namespace Curl
                 }
             }
 
-            this.lastFrame = this.currentFrame;
+           
             this.newMousePosition = this.UpdateMouse();
             base.Update(gameTime);
         }
