@@ -14,7 +14,8 @@
     <XnaCrossPlatformGroupID>720f7599-6ca4-440b-8500-14a90e54306a</XnaCrossPlatformGroupID>
     <ApplicationIcon>
     </ApplicationIcon>
-    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <Thumbnail>
+    </Thumbnail>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -119,7 +120,6 @@
     <Content Include="bass_fx.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
-    <Content Include="GameThumbnail.png" />
   </ItemGroup>
   <ItemGroup>
     <NestedContentProject Include="Content\Content.contentproj">

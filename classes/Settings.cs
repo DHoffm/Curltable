@@ -19,6 +19,7 @@ namespace General
     */
     public static class Settings
     {
+        private string settingsFileName = "settings.xml";
         private static Dictionary<string, object> settingsDic = new Dictionary<string, object>();
         /**
         * read the Settings File
@@ -26,9 +27,9 @@ namespace General
         */
         static public void Read()
         {
-            if (File.Exists("settings.xml"))
+            if (File.Exists(settingsFileName))
             {
-                XmlTextReader settingsReader = new XmlTextReader("settings.xml");
+                XmlTextReader settingsReader = new XmlTextReader(settingsFileName);
                 settingsReader.Read();
                 while (settingsReader.Read())
                 {
@@ -65,7 +66,7 @@ namespace General
         */
         public static void Write()
         {
-            XmlTextWriter settingsWriter = new XmlTextWriter("settings.xml", System.Text.Encoding.UTF8);
+            XmlTextWriter settingsWriter = new XmlTextWriter(settingsFileName, System.Text.Encoding.UTF8);
             settingsWriter.Formatting = Formatting.Indented;
             settingsWriter.WriteStartDocument(false);
             settingsWriter.WriteStartElement("settings");
