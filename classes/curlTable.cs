@@ -214,7 +214,7 @@ namespace Curl
             this.graphics.IsFullScreen = true;
             this.IsMouseVisible = true; //// Show the mouse cursor ( default is false )
             this.Content.RootDirectory = "Content";
-            this.IsFixedTimeStep = true;
+            this.IsFixedTimeStep = false;
             this.componentList.Add(this.setupComp = new SetupComponent(this));
             this.componentList.Add(this.shutdownComp = new ShutdownComponent(this));
         }
