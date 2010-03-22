@@ -19,7 +19,7 @@ namespace General
     */
     public static class Settings
     {
-        private string settingsFileName = "settings.xml";
+        private static string settingsFileName = "settings.xml";
         private static Dictionary<string, object> settingsDic = new Dictionary<string, object>();
         /**
         * read the Settings File
